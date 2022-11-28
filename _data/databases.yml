@@ -1,0 +1,17 @@
+- nome: MongoDB
+  nota: 60
+
+- nome: Mysql
+  nota: 60
+
+- nome: Oracle
+  nota: 90
+
+- nome: Postgresql
+  nota: 80
+
+- nome: Sqlite
+  nota: 80
+
+- nome: H2
+  nota: 90

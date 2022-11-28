@@ -1,0 +1,12 @@
+{% for object in objects %}
+<div class="row">
+  <div class="col">
+    {{ object.nome }}
+  </div>
+  <div class="col">
+    <div class="progress">
+      <div class="progress-bar" role="progressbar" aria-label="Basic example" style="width:{{ object.nota }}%" aria-valuemin="0" aria-valuemax="100"></div>
+    </div>
+  </div>
+</div>
+{% endfor %}

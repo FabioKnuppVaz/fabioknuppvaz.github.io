@@ -1,2 +1,2 @@
 livereload: true
-incremental: true
+disable_disk_cache: true

@@ -1,0 +1,74 @@
+- nome: AKS
+  nota: 70
+
+- nome: ALM
+  nota: 50
+
+- nome: Android Studio
+  nota: 80
+
+- nome: AzureDevops
+  nota: 70
+
+- nome: BitBucket
+  nota: 90
+
+- nome: Confluence
+  nota: 70
+
+- nome: Dbeaver
+  nota: 90
+
+- nome: Docker
+  nota: 70
+
+- nome: Eclipse
+  nota: 90
+
+- nome: Gitlab
+  nota: 90
+
+- nome: Intellij
+  nota: 70
+
+- nome: Jenkins
+  nota: 90
+
+- nome: Jira
+  nota: 90
+
+- nome: Mantis
+  nota: 80
+
+- nome: Nexus
+  nota: 60
+
+- nome: Postman
+  nota: 90
+
+- nome: SoapUI
+  nota: 90
+
+- nome: Sonarqube
+  nota: 60
+
+- nome: StarTeam
+  nota: 80
+
+- nome: TestLink
+  nota: 80
+
+- nome: UFT
+  nota: 70
+
+- nome: VSCode
+  nota: 90
+
+- nome: Xcode
+  nota: 60
+
+- nome: Xray
+  nota: 50
+
+- nome: Zephyr
+  nota: 80
