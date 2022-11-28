@@ -3,20 +3,44 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"  integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
-    <title>Portifólio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
+    <title>Portfolio</title>
   </head>
   <body>
-    <h2>Fábio Knupp Vaz</h2>
+    <div class="w-80 p-4">
+      <div class="card text-center align-items-center">
+        <br>
+        <img class="card-img-top rounded-circle" style="width: 18rem;" src="https://avatars.githubusercontent.com/u/16068350?s=400&u=ba9643f2486a87556c7a7f1a0fb1ebc2e1959603&v=4">
+        <div class="card-body">
+          <h5 class="card-title">Fábio Knupp Vaz</h5>
+          Analista de qualidade e automatizador de testes
+          <br>
+          <br>
+          <span class="bi bi-geo-alt-fill"> São Paulo - Brasil</span>
+          <br>
+          <a href="https://www.linkedin.com/in/f%C3%A1bio-k-262931142/">
+            <span class="bi bi-linkedin"></span>
+            Linkedin
+          </a>
+          <br>
+          <a href="https://github.com/FabioKnuppVaz">
+            <span class="bi bi-github"></span>
+            GitHub
+          </a>
+          <br>
+          <a href="mailto:fabio.knupp@gmail.com">
+            <span class="bi bi-google"></span>
+            Email
+          </a>
+          <br>
+        </div>
+      </div>
 
-    São Paulo - Brasil<br>
-    <br>
-    <a href="https://www.linkedin.com/in/f%C3%A1bio-k-262931142/">Linkedin</a><br>
-    <a href="https://github.com/FabioKnuppVaz">GitHub</a><br>
-    <br>
+      {{ content }}
 
-    {{ content }}
-
+    </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
   </body>
 </html>
