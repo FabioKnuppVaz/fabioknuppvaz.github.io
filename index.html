@@ -1,64 +1,394 @@
 <!DOCTYPE html>
-<html lang="pt">
-  <head>
-    <meta charset="utf-8">
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
-    <title>Portfolio</title>
-  </head>
-  <body>
-    <div class="w-80 p-4">
-      <div class="card text-center align-items-center">
-        <br>
-        <img class="card-img-top rounded-circle" style="width: 18rem;" src="https://avatars.githubusercontent.com/u/16068350?s=400&u=ba9643f2486a87556c7a7f1a0fb1ebc2e1959603&v=4">
-        <div class="card-body">
-          <h5 class="card-title">Fábio Knupp Vaz</h5>
-          Analista de qualidade e automatizador de testes
-          <br>
-          <br>
-          <span class="bi bi-geo-alt-fill"> São Paulo - Brasil</span>
-          <br>
-          <br>
-          <a href="https://www.linkedin.com/in/f%C3%A1bio-k-262931142/">
-            <span class="bi bi-linkedin"></span>
-            Linkedin
-          </a>
-          <br>
-          <a href="https://github.com/FabioKnuppVaz">
-            <span class="bi bi-github"></span>
-            GitHub
-          </a>
-          <br>
-          <a href="mailto:fabio.knupp@gmail.com">
-            <span class="bi bi-google"></span>
-            Email
-          </a>
-          <br>
-        </div>
-      </div>
-        <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <img src="..." class="d-block w-100" alt="...">
-            </div>
-            <div class="carousel-item">
-              <img src="..." class="d-block w-100" alt="...">
-            </div>
-            <div class="carousel-item">
-              <img src="..." class="d-block w-100" alt="...">
-            </div>
-          </div>
-          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-          </button>
-          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-          </button>
-        </div>
-      </div>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
-  </body>
+    <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+    <title>Portfólio | Fábio Knupp Vaz</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    body {
+      background: #0f172a;
+      color: #e5e7eb;
+      line-height: 1.6;
+    }
+
+    header {
+      background: #020617;
+      padding: 40px 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+    }
+
+    header p {
+      color: #94a3b8;
+    }
+
+    i {
+      font-size: 40px;
+    }
+
+    section {
+      max-width: 1000px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+
+    h2 {
+      margin-bottom: 20px;
+      border-left: 5px solid #38bdf8;
+      padding-left: 10px;
+    }
+
+    .sobre {
+      display: grid;
+      grid-template-columns: 1fr 2fr;
+      gap: 20px;
+      align-items: center;
+    }
+
+    .sobre img {
+      width: 100%;
+      border-radius: 10px;
+    }
+
+    .projetos {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      justify-content: space-evenly;
+      gap: 20px;
+    }
+
+    .card {
+      background: #1b747a;
+      padding: 20px;
+      border-radius: 10px;
+      transition: transform 0.3s;
+    }
+
+    .cardLogos{
+      background: #1b747a;
+      padding: 20px;
+      border-radius: 10px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    .card h3 {
+      margin-bottom: 10px;
+      color: #38bdf8;
+    }
+
+    .card a {
+      display: inline-block;
+      margin-top: 10px;
+      color: #38bdf8;
+      text-decoration: none;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #020617;
+      color: #64748b;
+      margin-top: 40px;
+    }
+
+    @media (max-width: 768px) {
+      .sobre {
+        grid-template-columns: 1fr;
+      }
+    }
+
+  .contato-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+    margin-top: 20px;
+  }
+
+  .contato-links a {
+    text-decoration: none;
+    font-size: 40px;
+    color: #e5e7eb;
+    transition: transform 0.2s, color 0.2s;
+  }
+
+  .contato-links a:hover {
+    color: #38bdf8;
+    transform: translateY(-3px);
+  }
+
+  </style>
+</head>
+
+<body>
+
+<header>
+  <h1>Fábio Knupp Vaz</h1>
+  <p>QA | Desenvolvedor | Automação | Web</p>
+</header>
+
+<section>
+  <h2>Sobre mim</h2>
+  <div class="sobre">
+    <img class="card-img-top rounded-circle" style="width: 18rem;" src="https://avatars.githubusercontent.com/u/16068350?s=400&u=ba9643f2486a87556c7a7f1a0fb1ebc2e1959603&v=4">
+    <p>
+      Sou profissional de tecnologia com foco em qualidade e automação de testes.
+    </p>
+  </div>
+</section>
+
+<section>
+  <div class="projetos">
+    <div class="card">
+      <h3>Linguagens</h3>
+      <i class="devicon-azuresqldatabase-plain"></i>
+      <i class="devicon-csharp-plain"></i>
+      <i class="devicon-html5-plain"></i>
+      <i class="devicon-java-plain"></i>
+      <i class="devicon-javascript-plain"></i>
+      <i class="devicon-json-plain"></i>
+      <i class="devicon-php-plain"></i>
+      <i class="devicon-python-plain"></i>
+      <i class="devicon-ruby-plain"></i>
+      <i class="devicon-yaml-plain"></i>
+    </div>
+
+    <div class="card">
+      <h3>Frameworks</h3>
+      <i class="devicon-flutter-plain"></i>
+      <i class="devicon-junit-plain"></i>
+      <i class="devicon-karatelabs-plain"></i>
+      <i class="devicon-rspec-plain"></i>
+      <i class="devicon-spring-original"></i>
+    </div>
+
+    <div class="card">
+      <h3>Ferramentas</h3>
+      <i class="devicon-androidstudio-plain"></i>
+      <i class="devicon-cucumber-plain"></i>
+      <i class="devicon-cypressio-plain"></i>
+      <i class="devicon-eclipse-plain-wordmark"></i>
+      <i class="devicon-figma-plain"></i>
+      <i class="devicon-filezilla-plain"></i>
+      <i class="devicon-intellij-plain"></i>
+      <i class="devicon-maven-plain"></i>
+      <i class="devicon-nodejs-plain"></i>
+      <i class="devicon-npm-original-wordmark"></i>
+      <i class="devicon-postman-plain"></i>
+      <i class="devicon-putty-plain"></i>
+      <i class="devicon-selenium-original"></i>
+      <i class="devicon-sqldeveloper-plain"></i>
+      <i class="devicon-swagger-plain"></i>
+      <i class="devicon-visualstudio-plain"></i>
+      <i class="devicon-vscode-plain"></i>
+    </div>
+
+    <div class="card">
+      <h3>CI</h3>
+      <i class="devicon-bamboo-original"></i>
+      <i class="devicon-docker-plain"></i>
+      <i class="devicon-githubactions-plain"></i>
+      <i class="devicon-gitlab-plain"></i>
+      <i class="devicon-heroku-original"></i>
+      <i class="devicon-jenkins-line"></i>
+      <i class="devicon-kubernetes-plain"></i>
+      <i class="devicon-rancher-original"></i>
+    </div>
+
+    <div class="card">
+      <h3>Versionamento</h3>
+      <i class="devicon-bitbucket-original"></i>
+      <i class="devicon-git-plain"></i>
+      <i class="devicon-github-original"></i>
+    </div>
+
+    <div class="card">
+      <h3>Documentação</h3>
+      <i class="devicon-confluence-plain"></i>
+      <i class="devicon-jira-plain"></i>
+      <i class="devicon-trello-plain"></i>
+    </div>
+
+    <div class="card">
+      <h3>SO</h3>
+      <i class="devicon-debian-plain"></i>
+      <i class="devicon-linux-plain"></i>
+      <i class="devicon-ubuntu-plain"></i>
+      <i class="devicon-windows8-original"></i>
+    </div>
+
+    <div class="card">
+      <h3>Monitoramento</h3>
+      <i class="devicon-grafana-plain"></i>
+    </div>
+
+    <div class="card">
+      <h3>Database</h3>
+      <i class="devicon-mongodb-plain"></i>
+      <i class="devicon-mysql-original"></i>
+      <i class="devicon-oracle-original"></i>
+      <i class="devicon-postgresql-plain"></i>
+      <i class="devicon-sqlite-plain"></i>
+    </div>
+  </div>
+</section>
+
+<section>
+  <h2>Projetos</h2>
+  <div class="projetos">
+    <div class="cardLogos">
+      <img
+        src="https://logodownload.org/wp-content/uploads/2019/08/b3-logo.png"
+        style="width:200px; height:200px; object-fit:contain;"
+      />
+      <p>Negociação de Ações, Derivativos, Equities e Termos</p>
+    </div>
+
+    <div class="cardLogos">
+      <img
+        src="https://logodownload.org/wp-content/uploads/2016/10/porto-seguro-logo-0-1536x1536.png"
+        style="width:200px; height:200px; object-fit:contain;"
+      />
+      <p>Seguros automobilísticos</p>
+    </div>
+
+    <div class="cardLogos">
+      <img
+        src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/Logo_PB.svg/2560px-Logo_PB.svg.png"
+        style="width:200px; height:200px; object-fit:contain;"
+      />
+      <p>Investimentos de renda fixa e renda variável</p>
+    </div>
+
+    <div class="cardLogos">
+      <img
+        src="https://centraldevendasembracon.com.br/wp-content/uploads/2024/12/logo-embracom-curitiba-1.png"
+        style="width:200px; height:200px; object-fit:contain;"
+      />
+      <p>Consórcios</p>
+    </div>
+
+    <div class="cardLogos">
+      <img
+        src="https://x2inteligencia.digital/wp-content/uploads/2021/10/hub_logo.png"
+        style="width:200px; height:200px; object-fit:contain;"
+      />
+      <p>Cashback, marketplace, meios de captura</p>
+    </div>
+
+    <div class="cardLogos">
+      <img
+        src="https://logodownload.org/wp-content/uploads/2017/09/alelo-logo-2.png"
+        style="width:200px; height:200px; object-fit:contain;"
+      />
+      <p>Benefícios</p>
+    </div>
+
+    <div class="cardLogos">
+      <img
+        src="https://logodownload.org/wp-content/uploads/2014/07/rede-logo-1.png"
+        style="width:200px; height:200px; object-fit:contain;"
+      />
+      <p>Meios de captura, adquirência, clearing, meios de pagamentos</p>
+    </div>
+
+    <div class="cardLogos">
+      <img
+        src="https://logodownload.org/wp-content/uploads/2017/09/smiles-logo-12.png"
+        style="width:200px; height:200px; object-fit:contain;"
+      />
+      <p>Gestão de beneficios</p>
+    </div>
+
+    <div class="cardLogos">
+      <img
+        src="https://aliancasaude.com/images/logo_odontoprev.webp"
+        style="width:200px; height:200px; object-fit:contain;"
+      />
+      <p>Gestão de convênios</p>
+    </div>
+
+    <div class="cardLogos">
+      <img
+        src="https://upload.wikimedia.org/wikipedia/commons/3/3a/First_Data_logo.svg"
+        style="width:200px; height:200px; object-fit:contain;"
+      />
+      <p>Meios de captura, adquirência, clearing, meios de pagamentos</p>
+    </div>
+
+    <div class="cardLogos">
+      <img
+        src="https://logodownload.org/wp-content/uploads/2014/07/Cielo-logo-logotipo.png"
+        style="width:200px; height:200px; object-fit:contain;"
+      />
+      <p>Meios de captura, adquirência, clearing, meios de pagamentos</p>
+    </div>
+
+    <div class="cardLogos">
+      <img
+        src="https://upload.wikimedia.org/wikipedia/commons/c/c5/TecBan_sobreBRANCO.png"
+        style="width:200px; height:200px; object-fit:contain;"
+      />
+      <p>Meios de captura, meios de pagamentos, ATM</p>
+    </div>
+
+    <div class="cardLogos">
+      <img
+        src="https://metait.ai/wp-content/uploads/2021/07/banco-original-logo.png"
+        style="width:200px; height:200px; object-fit:contain;"
+      />
+      <p>Aplicativo de abertura de contas</p>
+    </div>
+
+    <div class="cardLogos">
+      <img
+        src="https://portal.coren-sp.gov.br/wp-content/uploads/2014/11/logo%20uninove.png"
+        style="width:200px; height:200px; object-fit:contain;"
+      />
+      <p>Softwares educacionais, hardwares</p>
+    </div>
+
+</section>
+
+<section class="contato">
+  <h2>Contato</h2>
+  <div class="contato-links">
+    <a href="https://www.linkedin.com/in/f%C3%A1bio-k-262931142/">
+      <i class="devicon-linkedin-plain"></i>
+    </a>
+    <a href="https://github.com/FabioKnuppVaz">
+      <i class="devicon-github-original"></i>
+    </a>
+    <a href="mailto:fabio.knupp@gmail.com">
+      <i class="devicon-google-plain"></i>
+    </a>
+  </div>
+</section>
+
+<footer>
+  © 2026 - Fábio Knupp Vaz
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+</body>
 </html>
