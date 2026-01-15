@@ -1,73 +1,37 @@
----
-layout: default
----
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Fabio Vaz | Portfólio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<div class="card">
-  <h3 class="card-title text-center">APM</h3>
-  <div class="card-body">
-    <p class="card-text">
-      {% assign objects = site.data.apm %}
-      {% include conhecimento.html %}
-    </p>
-  </div>
-</div>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
 
-<div class="card">
-  <h3 class="card-title text-center">Databases</h3>
-  <div class="card-body">
-    <p class="card-text">
-      {% assign objects = site.data.databases %}
-      {% include conhecimento.html %}
-    </p>
-  </div>
-</div>
+  <header>
+    <h1>Fabio Vaz</h1>
+    <p>QA | Automação | Engenharia de Software</p>
+  </header>
 
-<div class="card">
-  <h3 class="card-title text-center">Ferramentas</h3>
-  <div class="card-body">
-    <p class="card-text">
-      {% assign objects = site.data.ferramentas %}
-      {% include conhecimento.html %}
-    </p>
-  </div>
-</div>
+  <main>
+    <section>
+      <h2>Sobre</h2>
+      <p>Breve descrição profissional.</p>
+    </section>
 
-<div class="card">
-  <h3 class="card-title text-center">Linguagens</h3>
-  <div class="card-body">
-    <p class="card-text">
-      {% assign objects = site.data.linguagens %}
-      {% include conhecimento.html %}
-    </p>
-  </div>
-</div>
+    <section>
+      <h2>Projetos</h2>
+      <ul>
+        <li>Projeto 1</li>
+        <li>Projeto 2</li>
+      </ul>
+    </section>
+  </main>
 
-<div class="card">
-  <h3 class="card-title text-center">Performance</h3>
-  <div class="card-body">
-    <p class="card-text">
-      {% assign objects = site.data.performance %}
-      {% include conhecimento.html %}
-    </p>
-  </div>
-</div>
+  <footer>
+    <p>© 2026</p>
+  </footer>
 
-<div class="card">
-  <h3 class="card-title text-center">Sistemas Operacionais</h3>
-  <div class="card-body">
-    <p class="card-text">
-      {% assign objects = site.data.so %}
-      {% include conhecimento.html %}
-    </p>
-  </div>
-</div>
-
-<div class="card">
-  <h3 class="card-title text-center">Tecnologias</h3>
-  <div class="card-body">
-    <p class="card-text">
-      {% assign objects = site.data.tecnologias %}
-      {% include conhecimento.html %}
-    </p>
-  </div>
-</div>
+</body>
+</html>
