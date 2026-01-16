@@ -1,0 +1,115 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body {
+    background: #0f172a;
+    color: #e5e7eb;
+    line-height: 1.6;
+}
+
+header {
+    background: #020617;
+    padding: 40px 20px;
+    text-align: center;
+}
+header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+header p {
+    color: #94a3b8;
+}
+i {
+    font-size: 40px;
+}
+section {
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+h2 {
+    margin-bottom: 20px;
+    border-left: 5px solid #38bdf8;
+    padding-left: 10px;
+}
+.sobre {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 20px;
+    align-items: center;
+}
+.sobre img {
+    width: 100%;
+    border-radius: 10px;
+}
+img {
+    width:200px;
+    height:200px;
+    object-fit:contain;
+}
+.projetos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    justify-content: space-evenly;
+    gap: 20px;
+}
+.card {
+    background: #1b747a;
+    padding: 20px;
+    border-radius: 10px;
+    transition: transform 0.3s;
+}
+.cardLogos{
+    background: #1b747a;
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.card:hover {
+    transform: translateY(-5px);
+}
+.card h3 {
+    margin-bottom: 10px;
+    color: #38bdf8;
+}
+.card a {
+    display: inline-block;
+    margin-top: 10px;
+    color: #38bdf8;
+    text-decoration: none;
+}
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #020617;
+    color: #64748b;
+    margin-top: 40px;
+}
+@media (max-width: 768px) {
+    .sobre {
+    grid-template-columns: 1fr;
+    }
+}
+.contato-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+    margin-top: 20px;
+}
+.contato-links a {
+    text-decoration: none;
+    font-size: 40px;
+    color: #e5e7eb;
+    transition: transform 0.2s, color 0.2s;
+}
+.contato-links a:hover {
+    color: #38bdf8;
+    transform: translateY(-3px);
+}

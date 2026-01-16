@@ -6,119 +6,7 @@
     <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
     <title>Portfólio | Fábio Knupp Vaz</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      font-family: Arial, Helvetica, sans-serif;
-    }
-    body {
-      background: #0f172a;
-      color: #e5e7eb;
-      line-height: 1.6;
-    }
-
-    header {
-      background: #020617;
-      padding: 40px 20px;
-      text-align: center;
-    }
-    header h1 {
-      font-size: 2.5rem;
-      margin-bottom: 10px;
-    }
-    header p {
-      color: #94a3b8;
-    }
-    i {
-      font-size: 40px;
-    }
-    section {
-      max-width: 1000px;
-      margin: 40px auto;
-      padding: 0 20px;
-    }
-    h2 {
-      margin-bottom: 20px;
-      border-left: 5px solid #38bdf8;
-      padding-left: 10px;
-    }
-    .sobre {
-      display: grid;
-      grid-template-columns: 1fr 2fr;
-      gap: 20px;
-      align-items: center;
-    }
-    .sobre img {
-      width: 100%;
-      border-radius: 10px;
-    }
-    .projetos {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      justify-content: space-evenly;
-      gap: 20px;
-    }
-    .card {
-      background: #1b747a;
-      padding: 20px;
-      border-radius: 10px;
-      transition: transform 0.3s;
-    }
-    .cardLogos{
-      background: #1b747a;
-      padding: 20px;
-      border-radius: 10px;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      text-align: center;
-    }
-    .card:hover {
-      transform: translateY(-5px);
-    }
-    .card h3 {
-      margin-bottom: 10px;
-      color: #38bdf8;
-    }
-    .card a {
-      display: inline-block;
-      margin-top: 10px;
-      color: #38bdf8;
-      text-decoration: none;
-    }
-    footer {
-      text-align: center;
-      padding: 20px;
-      background: #020617;
-      color: #64748b;
-      margin-top: 40px;
-    }
-    @media (max-width: 768px) {
-      .sobre {
-        grid-template-columns: 1fr;
-      }
-    }
-  .contato-links {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 60px;
-    margin-top: 20px;
-  }
-  .contato-links a {
-    text-decoration: none;
-    font-size: 40px;
-    color: #e5e7eb;
-    transition: transform 0.2s, color 0.2s;
-  }
-  .contato-links a:hover {
-    color: #38bdf8;
-    transform: translateY(-3px);
-  }
-  </style>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 <header>
@@ -225,107 +113,64 @@
   <h2>Projetos</h2>
   <div class="projetos">
     <div class="cardLogos">
-      <img
-        src="assets/b3.png"
-        style="width:200px; height:200px; object-fit:contain;"
-      />
+      <img src="assets/b3.png"/>
       <p>Negociação de Ações, Derivativos, Equities e Termos</p>
     </div>
     <div class="cardLogos">
-      <img
-        src="assets/porto-seguro.png"
-        style="width:200px; height:200px; object-fit:contain;"
-      />
+      <img src="assets/porto-seguro.png"/>
       <p>Seguros automobilísticos</p>
     </div>
     <div class="cardLogos">
-      <img
-        src="assets/parana-banco.png"
-        style="width:200px; height:200px; object-fit:contain;"
-      />
+      <img src="assets/parana-banco.png"/>
       <p>Investimentos de renda fixa e renda variável</p>
     </div>
     <div class="cardLogos">
-      <img
-        src="assets/parana-banco.png"
-        style="width:200px; height:200px; object-fit:contain;"
-      />
+      <img src="assets/parana-banco.png" />
       <p>Consórcios</p>
     </div>
     <div class="cardLogos">
-      <img
-        src="assets/hub-fintech.png"
-        style="width:200px; height:200px; object-fit:contain;"
-      />
+      <img src="assets/hub-fintech.png" />
       <p>Cashback, marketplace, meios de captura</p>
     </div>
     <div class="cardLogos">
-      <img
-        src="assets/alelo.png"
-        style="width:200px; height:200px; object-fit:contain;"
-      />
+      <img src="assets/alelo.png" />
       <p>Benefícios</p>
     </div>
     <div class="cardLogos">
-      <img
-        src="assets/tecban.png"
-        style="width:200px; height:200px; object-fit:contain;"
-      />
+      <img src="assets/tecban.png" />
       <p>Meios de captura, adquirência, clearing, meios de pagamentos</p>
     </div>
     <div class="cardLogos">
-      <img
-        src="assets/smiles.png"
-        style="width:200px; height:200px; object-fit:contain;"
-      />
+      <img src="assets/smiles.png" />
       <p>Gestão de beneficios</p>
     </div>
     <div class="cardLogos">
-      <img
-        src="assets/odontoprev.png"
-        style="width:200px; height:200px; object-fit:contain;"
-      />
+      <img src="assets/odontoprev.png" />
       <p>Gestão de convênios</p>
     </div>
     <div class="cardLogos">
-      <img
-        src="assets/rede.png"
-        style="width:200px; height:200px; object-fit:contain;"
-      />
+      <img src="assets/rede.png" />
       <p>Meios de captura, adquirência, clearing, meios de pagamentos</p>
     </div>
     <div class="cardLogos">
-      <img
-        src="assets/fiserv.png"
-        style="width:200px; height:200px; object-fit:contain;"
-      />
+      <img src="assets/first-data.png" />
       <p>Meios de captura, adquirência, clearing, meios de pagamentos</p>
     </div>
     <div class="cardLogos">
-      <img
-        src="assets/cielo.png"
-        style="width:200px; height:200px; object-fit:contain;"
-      />
+      <img src="assets/cielo.png" />
       <p>Meios de captura, meios de pagamentos, ATM</p>
     </div>
     <div class="cardLogos">
-      <img
-        src="assets/banco-original.png"
-        style="width:200px; height:200px; object-fit:contain;"
-      />
+      <img src="assets/banco-original.png" />
       <p>Aplicativo de abertura de contas</p>
     </div>
     <div class="cardLogos">
-      <img
-        src="assets/uninove.png"
-        style="width:200px; height:200px; object-fit:contain;"
-      />
+      <img src="assets/uninove.png" />
       <p>Softwares educacionais, hardwares</p>
     </div>
 </section>
-
 <section class="contato">
-  <h2>Contato</h2>
+  <h2>Contatos</h2>
   <div class="contato-links">
     <a href="https://www.linkedin.com/in/f%C3%A1bio-k-262931142/">
       <i class="devicon-linkedin-plain"></i>
@@ -338,7 +183,6 @@
     </a>
   </div>
 </section>
-
 <footer>
   © 2026 - Fábio Knupp Vaz
 </footer>
