@@ -14,7 +14,6 @@
       box-sizing: border-box;
       font-family: Arial, Helvetica, sans-serif;
     }
-
     body {
       background: #0f172a;
       color: #e5e7eb;
@@ -26,86 +25,70 @@
       padding: 40px 20px;
       text-align: center;
     }
-
     header h1 {
       font-size: 2.5rem;
       margin-bottom: 10px;
     }
-
     header p {
       color: #94a3b8;
     }
-
     i {
       font-size: 40px;
     }
-
     section {
       max-width: 1000px;
       margin: 40px auto;
       padding: 0 20px;
     }
-
     h2 {
       margin-bottom: 20px;
       border-left: 5px solid #38bdf8;
       padding-left: 10px;
     }
-
     .sobre {
       display: grid;
       grid-template-columns: 1fr 2fr;
       gap: 20px;
       align-items: center;
     }
-
     .sobre img {
       width: 100%;
       border-radius: 10px;
     }
-
     .projetos {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
       justify-content: space-evenly;
       gap: 20px;
     }
-
     .card {
       background: #1b747a;
       padding: 20px;
       border-radius: 10px;
       transition: transform 0.3s;
     }
-
     .cardLogos{
       background: #1b747a;
       padding: 20px;
       border-radius: 10px;
-      width:200px; 
-      height:200px;
       display: flex;
       flex-direction: column;
       align-items: center;
       text-align: center;
     }
-
     .card:hover {
       transform: translateY(-5px);
     }
-
     .card h3 {
       margin-bottom: 10px;
       color: #38bdf8;
     }
-
     .card a {
       display: inline-block;
       margin-top: 10px;
       color: #38bdf8;
       text-decoration: none;
     }
-
     footer {
       text-align: center;
       padding: 20px;
@@ -113,13 +96,11 @@
       color: #64748b;
       margin-top: 40px;
     }
-
     @media (max-width: 768px) {
       .sobre {
         grid-template-columns: 1fr;
       }
     }
-
   .contato-links {
     display: flex;
     justify-content: center;
@@ -127,29 +108,23 @@
     gap: 60px;
     margin-top: 20px;
   }
-
   .contato-links a {
     text-decoration: none;
     font-size: 40px;
     color: #e5e7eb;
     transition: transform 0.2s, color 0.2s;
   }
-
   .contato-links a:hover {
     color: #38bdf8;
     transform: translateY(-3px);
   }
-
   </style>
 </head>
-
 <body>
-
 <header>
   <h1>Fábio Knupp Vaz</h1>
   <p>QA | Desenvolvedor | Automação</p>
 </header>
-
 <section>
   <h2>Sobre mim</h2>
   <div class="sobre">
@@ -159,7 +134,6 @@
     </p>
   </div>
 </section>
-
 <section>
   <div class="projetos">
     <div class="card">
@@ -175,7 +149,6 @@
       <i class="devicon-ruby-plain"></i>
       <i class="devicon-yaml-plain"></i>
     </div>
-
     <div class="card">
       <h3>Frameworks</h3>
       <i class="devicon-flutter-plain"></i>
@@ -184,7 +157,6 @@
       <i class="devicon-rspec-plain"></i>
       <i class="devicon-spring-original"></i>
     </div>
-
     <div class="card">
       <h3>Ferramentas</h3>
       <i class="devicon-androidstudio-plain"></i>
@@ -205,7 +177,6 @@
       <i class="devicon-visualstudio-plain"></i>
       <i class="devicon-vscode-plain"></i>
     </div>
-
     <div class="card">
       <h3>CI</h3>
       <i class="devicon-bamboo-original"></i>
@@ -217,21 +188,18 @@
       <i class="devicon-kubernetes-plain"></i>
       <i class="devicon-rancher-original"></i>
     </div>
-
     <div class="card">
       <h3>Versionamento</h3>
       <i class="devicon-bitbucket-original"></i>
       <i class="devicon-git-plain"></i>
       <i class="devicon-github-original"></i>
     </div>
-
     <div class="card">
       <h3>Documentação</h3>
       <i class="devicon-confluence-plain"></i>
       <i class="devicon-jira-plain"></i>
       <i class="devicon-trello-plain"></i>
     </div>
-
     <div class="card">
       <h3>SO</h3>
       <i class="devicon-debian-plain"></i>
@@ -239,12 +207,10 @@
       <i class="devicon-ubuntu-plain"></i>
       <i class="devicon-windows8-original"></i>
     </div>
-
     <div class="card">
       <h3>Monitoramento</h3>
       <i class="devicon-grafana-plain"></i>
     </div>
-
     <div class="card">
       <h3>Database</h3>
       <i class="devicon-mongodb-plain"></i>
@@ -255,122 +221,107 @@
     </div>
   </div>
 </section>
-
 <section>
   <h2>Projetos</h2>
   <div class="projetos">
     <div class="cardLogos">
       <img
-        src="https://logodownload.org/wp-content/uploads/2019/08/b3-logo.png"
-        style="object-fit:contain;"
+        src="assets/b3.png"
+        style="width:200px; height:200px; object-fit:contain;"
       />
       <p>Negociação de Ações, Derivativos, Equities e Termos</p>
     </div>
-
     <div class="cardLogos">
       <img
-        src="https://logodownload.org/wp-content/uploads/2016/10/porto-seguro-logo-0-1536x1536.png"
-        style="object-fit:contain;"
+        src="assets/porto-seguro.png"
+        style="width:200px; height:200px; object-fit:contain;"
       />
       <p>Seguros automobilísticos</p>
     </div>
-
     <div class="cardLogos">
       <img
-        src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/Logo_PB.svg/2560px-Logo_PB.svg.png"
-        style="object-fit:contain;"
+        src="assets/parana-banco.png"
+        style="width:200px; height:200px; object-fit:contain;"
       />
       <p>Investimentos de renda fixa e renda variável</p>
     </div>
-
     <div class="cardLogos">
       <img
-        src="https://centraldevendasembracon.com.br/wp-content/uploads/2024/12/logo-embracom-curitiba-1.png"
-        style="object-fit:contain;"
+        src="assets/parana-banco.png"
+        style="width:200px; height:200px; object-fit:contain;"
       />
       <p>Consórcios</p>
     </div>
-
     <div class="cardLogos">
       <img
-        src="https://x2inteligencia.digital/wp-content/uploads/2021/10/hub_logo.png"
-        style="object-fit:contain;"
+        src="assets/hub-fintech.png"
+        style="width:200px; height:200px; object-fit:contain;"
       />
       <p>Cashback, marketplace, meios de captura</p>
     </div>
-
     <div class="cardLogos">
       <img
-        src="https://logodownload.org/wp-content/uploads/2017/09/alelo-logo-2.png"
-        style="object-fit:contain;"
+        src="assets/alelo.png"
+        style="width:200px; height:200px; object-fit:contain;"
       />
       <p>Benefícios</p>
     </div>
-
     <div class="cardLogos">
       <img
-        src="https://logodownload.org/wp-content/uploads/2014/07/rede-logo-1.png"
-        style="object-fit:contain;"
+        src="assets/tecban.png"
+        style="width:200px; height:200px; object-fit:contain;"
       />
       <p>Meios de captura, adquirência, clearing, meios de pagamentos</p>
     </div>
-
     <div class="cardLogos">
       <img
-        src="https://logodownload.org/wp-content/uploads/2017/09/smiles-logo-12.png"
-        style="object-fit:contain;"
+        src="assets/smiles.png"
+        style="width:200px; height:200px; object-fit:contain;"
       />
       <p>Gestão de beneficios</p>
     </div>
-
     <div class="cardLogos">
       <img
-        src="https://aliancasaude.com/images/logo_odontoprev.webp"
-        style="object-fit:contain;"
+        src="assets/odontoprev.png"
+        style="width:200px; height:200px; object-fit:contain;"
       />
       <p>Gestão de convênios</p>
     </div>
-
     <div class="cardLogos">
       <img
-        src="https://upload.wikimedia.org/wikipedia/commons/3/3a/First_Data_logo.svg"
-        style="object-fit:contain;"
+        src="assets/rede.png"
+        style="width:200px; height:200px; object-fit:contain;"
       />
       <p>Meios de captura, adquirência, clearing, meios de pagamentos</p>
     </div>
-
     <div class="cardLogos">
       <img
-        src="https://logodownload.org/wp-content/uploads/2014/07/Cielo-logo-logotipo.png"
-        style="object-fit:contain;"
+        src="assets/fiserv.png"
+        style="width:200px; height:200px; object-fit:contain;"
       />
       <p>Meios de captura, adquirência, clearing, meios de pagamentos</p>
     </div>
-
     <div class="cardLogos">
       <img
-        src="https://upload.wikimedia.org/wikipedia/commons/c/c5/TecBan_sobreBRANCO.png"
-        style="object-fit:contain;"
+        src="assets/cielo.png"
+        style="width:200px; height:200px; object-fit:contain;"
       />
       <p>Meios de captura, meios de pagamentos, ATM</p>
     </div>
-
     <div class="cardLogos">
       <img
-        src="https://metait.ai/wp-content/uploads/2021/07/banco-original-logo.png"
-        style="object-fit:contain;"
+        src="assets/banco-original.png"
+        style="width:200px; height:200px; object-fit:contain;"
       />
       <p>Aplicativo de abertura de contas</p>
     </div>
-
     <div class="cardLogos">
       <img
-        src="https://portal.coren-sp.gov.br/wp-content/uploads/2014/11/logo%20uninove.png"
-        style="object-fit:contain;"
+        src="assets/uninove.png"
+        style="width:200px; height:200px; object-fit:contain;"
       />
       <p>Softwares educacionais, hardwares</p>
     </div>
-
 </section>
 
 <section class="contato">
