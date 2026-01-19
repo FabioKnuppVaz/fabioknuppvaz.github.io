@@ -49,6 +49,10 @@ img {
     height:200px;
     object-fit:contain;
 }
+.card-img {
+    width: 400px;
+    height: 400px;
+}
 .projetos {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -132,52 +136,51 @@ footer {
     border-radius: 12px;
     font-weight: 500;
 }
-
 .badge-linguagens {
-  background-color: #df8882;
-  color: #000000;
+    background-color: #070707;
+    color: #e9eef0;
 }
 .badge-bibliotecas {
-  background-color: #ffe8a8;
-  color: #000000;
+    background-color: #ffe8a8;
+    color: #000000;
 }
 .badge-frameworks {
-  background-color: #f3f59a;
-  color: #000000;
+    background-color: #f3f59a;
+    color: #000000;
 }
 .badge-ferramentas {
-  background-color: #96d694;
-  color: #000000;
+    background-color: #96d694;
+    color: #000000;
 }
 .badge-ci {
-  background-color: #a5e4e4;
-  color: #000000;
+    background-color: #a5e4e4;
+    color: #000000;
 }
 .badge-versionamento {
-  background-color: #96b3df;
-  color: #000000;
+    background-color: #96b3df;
+    color: #000000;
 }
 .badge-documentacao {
-  background-color: #c2b4e4;
-  color: #000000;
+    background-color: #c2b4e4;
+    color: #000000;
 }
 .badge-tecnologia {
-  background-color: #e2b8dd;
-  color: #000000;
+    background-color: #e2b8dd;
+    color: #000000;
 }
 .badge-so {
-  background-color: #070707;
-  color: #e9eef0;
+    background-color: #df8882;
+    color: #000000;
 }
 .badge-database {
-  background-color: #cec9c7;
-  color: #000000;
+    background-color: #cec9c7;
+    color: #000000;
 }
 .badge-monitoramento {
-  background-color: #9eddda;
-  color: #000000;
+    background-color: #9eddda;
+    color: #000000;
 }
 .badge-metodologia {
-  background-color: #b694ac;
-  color: #000000;
+    background-color: #b694ac;
+    color: #000000;
 }
